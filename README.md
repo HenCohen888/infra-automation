@@ -20,3 +20,36 @@ This project is built as preparation for future real cloud automation using AWS 
 
 ---
 
+## Project Structure
+
+infra-automation/
+├── configs/
+│   └── instances.json
+├── logs/
+│   └── provisioning.log
+├── scripts/
+│   └── install_nginx.sh
+├── src/
+│   ├── input_prompt.py
+│   ├── instance_io.py
+│   ├── machine.py
+│   └── __init__.py
+├── main.py
+├── requirements.txt
+└── README.md
+
+---
+
+## Setup & Installation
+
+### Prerequisites
+- Python 3.8+
+- Ubuntu / WSL (for Nginx installation)
+- Git
+
+### Clone the repository
+```bash
+git clone https://github.com/HenCohen888/infra-automation.git
+cd infra-automation
+
+
