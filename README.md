@@ -43,19 +43,60 @@ infra-automation/
 └── README.md              # Project documentation
 ```
 
-
-
 ## Setup & Installation
 
 ### Prerequisites
 - Python 3.8+
-- Ubuntu / WSL (for Nginx installation)
-- Git
+- Linux / WSL environment (required for Nginx installation)
+- sudo privileges
+- Git installed
 
 ### Clone the repository
+
 ```bash
 git clone https://github.com/HenCohen888/infra-automation.git
 cd infra-automation
+
+git clone https://github.com/HenCohen888/infra-automation.git
+cd infra-automation
+
+## Class Responsibilities
+
+### Machine
+- Represents a virtual machine definition
+- Performs validation on:
+  - Name
+  - Operating system
+  - CPU cores
+  - RAM size
+- Converts VM data to dictionary format
+- Runs service installation (Nginx) via Bash script
+
+### instance_io
+- Loads existing VM configurations from JSON
+- Saves updated VM configurations back to JSON
+- Handles basic file I/O error conditions
+
+### input_prompt
+- Collects user input interactively
+- Validates format and acceptable value ranges
+- Ensures clean and user-friendly error messages
+
+### install_nginx.sh (Bash Script)
+- Checks if Nginx is already installed (idempotent)
+- Installs and configures Nginx using `apt`
+- Exits with proper error codes for Python error handling
+
+## Troubleshooting
+
+### Error: Script not found
+**Cause:** Running program from the wrong directory  
+**Fix:** Always run from the project root:
+
+```bash
+cd infra-automation
+python3 main.py
+
 
 
 
