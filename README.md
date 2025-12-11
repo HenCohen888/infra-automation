@@ -52,6 +52,8 @@ infra-automation/
 - Git installed
 
 ### Clone the repository
+
+```bash
 git clone https://github.com/HenCohen888/infra-automation.git
 cd infra-automation
 
@@ -92,6 +94,7 @@ cd infra-automation
 ```bash
 cd infra-automation
 python3 main.py
+
 
 
 
