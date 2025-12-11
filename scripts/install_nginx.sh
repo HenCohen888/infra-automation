@@ -15,4 +15,4 @@ echo "[INFO] nginx not found, installing..."
 sudo apt update
 sudo apt install -y nginx
 
-echo "[INFO] nginx installation finishied."
+echo "[INFO] finishied."
