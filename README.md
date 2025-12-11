@@ -23,25 +23,26 @@ This project is built as preparation for future real cloud automation using AWS 
 ```
 infra-automation/
 │
-├── configs/
-│   └── instances.json
+├── configs/               # Stored VM configurations
+│   └── instances.json     # Output file containing created machines
 │
-├── logs/
-│   └── provisioning.log
+├── logs/                  # Logging directory
+│   └── provisioning.log   # Log output from provisioning runs
 │
-├── scripts/
-│   └── install_nginx.sh
+├── scripts/               # Shell automation scripts
+│   └── install_nginx.sh   # Bash script to install Nginx
 │
-├── src/
-│   ├── input_prompt.py
-│   ├── instance_io.py
-│   ├── machine.py
-│   └── __init__.py
+├── src/                   # Python source code
+│   ├── input_prompt.py    # User input & validation logic
+│   ├── instance_io.py     # Load/save JSON configuration
+│   ├── machine.py         # Machine class + install_nginx logic
+│   └── __init__.py        # Module initializer
 │
-├── main.py
-├── requirements.txt
-└── README.md
+├── main.py                # Main program entry point
+├── requirements.txt       # Python dependencies
+└── README.md              # Project documentation
 ```
+
 
 
 ## Setup & Installation
@@ -55,6 +56,7 @@ infra-automation/
 ```bash
 git clone https://github.com/HenCohen888/infra-automation.git
 cd infra-automation
+
 
 
 
