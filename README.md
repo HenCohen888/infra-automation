@@ -18,27 +18,31 @@ This project is built as preparation for future real cloud automation using AWS 
 - Full logging system (console + file)  
 - Error handling in Python and Bash  
 
----
-
 ## Project Structure
 
+```
 infra-automation/
+│
 ├── configs/
 │   └── instances.json
+│
 ├── logs/
 │   └── provisioning.log
+│
 ├── scripts/
 │   └── install_nginx.sh
+│
 ├── src/
 │   ├── input_prompt.py
 │   ├── instance_io.py
 │   ├── machine.py
 │   └── __init__.py
+│
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
 
----
 
 ## Setup & Installation
 
@@ -51,5 +55,6 @@ infra-automation/
 ```bash
 git clone https://github.com/HenCohen888/infra-automation.git
 cd infra-automation
+
 
 
