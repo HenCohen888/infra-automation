@@ -95,6 +95,7 @@ cd infra-automation
 ```bash
 cd infra-automation
 python3 main.py
+```
 
 
 
